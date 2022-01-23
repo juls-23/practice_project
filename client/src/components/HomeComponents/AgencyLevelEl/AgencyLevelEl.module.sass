@@ -1,0 +1,48 @@
+$text-color: #77838f
+$link-color: #8c98c4
+$link-hover: #007bff
+$light-color: #fff
+
+@mixin color($color)
+  color: $color 
+  border-bottom: 1px dashed $color
+
+.article
+  margin: 0 0.5rem
+  text-align: center 
+  margin-bottom: 2rem
+  @media screen and (min-width: 768px)
+    margin-bottom: none
+    flex-basis: 310px
+    
+.iconWrapping
+  display: inline-block
+  position: relative 
+  width: 3.125rem;
+  height: 3.125rem;
+  margin-bottom: 3rem
+  border-radius: 50%
+  color: $light-color
+  
+.icon
+  position: absolute
+  top: 45%
+  left: 0
+  right: 0
+
+.title  
+  margin-bottom: .5rem
+  font-size: 1.4rem
+  text-transform: capitalize
+
+
+.description
+  color: $text-color
+  line-height: 1.7    
+  &>a
+    margin-left: 0.3rem
+    text-decoration: none
+    @include color($link-color)
+    &:hover
+      @include color($link-hover)
+

@@ -1,0 +1,40 @@
+$btn-color: #007bff
+
+
+.sectionContainer
+  background-color: #f8f9fa  
+
+
+.container
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 80%
+  margin: 1rem auto
+  
+.title
+  text-align: center
+  text-transform: capitalize
+  font-size: 2rem
+  margin-bottom: 3rem
+ 
+
+.wrapper
+  @media screen and (min-width: 768px)
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+
+.btn
+  padding: 0.9rem 1rem
+  margin: 1rem
+  border: 2px solid $btn-color
+  border-radius: 0.4rem
+  color: $btn-color
+  background-color: transparent
+  text-transform: capitalize
+  &:hover
+    transition: all .2s ease-in-out
+    color: #fff
+    background-color: $btn-color
+  

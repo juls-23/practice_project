@@ -9,6 +9,7 @@ import styles from './Home.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
 import StartContext from '../../components/HomeComponents/StartContext/StartContext'
+import AgencyLevel from '../../components/HomeComponents/AgencyLevel/AgencyLevel' 
 
 const Home = (props) => {
   const [index, setIndex] = useState(0);
@@ -215,6 +216,7 @@ const Home = (props) => {
               />
             </div>
           </div>
+          <AgencyLevel />
           <StartContext />
           <Footer />
         </>
