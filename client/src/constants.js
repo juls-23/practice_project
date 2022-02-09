@@ -2,6 +2,7 @@ const env = process.env.NODE_ENV || 'development'
 const serverIP = 'localhost'
 const serverPort = 5000
 export default {
+  SCREEN_WIDTH_BREAKPOINT: 768,
   CONTACTS:{
     PHONE:'(877) 355-3585'
   },
